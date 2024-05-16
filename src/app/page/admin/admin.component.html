@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>email</th>
+          <th>roll</th>
+          <th>contraseña</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(item of personas; track item) {
+        <tr>
+          <td>{{item.id}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.rol}}</td>
+          <td>{{item.password}}</td>
+           <td>
+            <button [routerLink]="['/editar',item.id]">Editar</button>
+            <button  (click)="eliminar(item.id)">Eliminar</button>
+           </td> 
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <td>
+    <button [routerLink]="['/registro']" class="btn btn-info">Nuevo Usuairio</button>
+  </td>
+
+  <button (click)="logaut()">salir</button>
+  
+    

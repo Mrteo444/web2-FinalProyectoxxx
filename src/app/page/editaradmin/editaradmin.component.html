@@ -1,0 +1,15 @@
+<form class="form-group" (ngSubmit)="editar(formulario)" #formulario="ngForm">
+    <label class="form-label">Ingresar Id</label>
+    <input class="form-control" type="text" name="id" [(ngModel)]="id">
+    <label class="form-label">Ingresaer mail</label>
+    <input class="form-control" type="text" name="mail" [(ngModel)]="email">
+    <label class="form-label">Ingresar roll</label>
+    <input class="form-control" type="text" name="roll" [(ngModel)]="roll">
+    <label class="form-label">Ingresar password</label>
+    <input class="form-control" type="text" name="password" [(ngModel)]="password">
+    
+    
+   
+
+    <button class="btn btn-primary" type="submit">Enviar</button>
+</form>

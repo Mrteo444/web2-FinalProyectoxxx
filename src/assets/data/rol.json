@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "email": "b@g.com",
+      "password": "$2a$10$sGhXHbKkj1Iia4slRnsRE.8Q/YcqJhnVDarToDL8pIqzKXjXuy7AO",
+      "id": 3
+    },
+    {
+      "email": "z@g.com",
+      "password": "$2a$10$ULQz6Sm4tT5KgzpWyM5NHOptrvMSUy0VhUPowvyMiPCGdxn/GhSVC",
+      "rol": "admin",
+      "id": 4
+    },
+    {
+      "email": "f@g.com",
+      "password": "$2a$10$4Imb3UKc6wh8IzAtz6YRnOAqAY2Y6938EBSVjjmKMFgeaQZaKVeqK",
+      "rol": "cocina",
+      "id": 5
+    }
+  ]
+}

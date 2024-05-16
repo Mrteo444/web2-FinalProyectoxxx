@@ -1,0 +1,37 @@
+
+
+
+<div class="container">
+  <input type="number" [(ngModel)]="numeroMesa">
+    <button (click)="filtrarPorMesa()" class="btn btn-primary">Filtrar</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>mesa</th>
+          <th>Edad</th>
+          <th>tipo_de_comida</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(item of personas; track item) {
+        <tr>
+          <td>{{item.id}}</td>
+          <td>{{item.mesa}}</td>
+          <td>{{item.tipo_de_comida}}</td>
+          
+           <td>
+            
+           </td> 
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  <td>
+    <button [routerLink]="['/add']" class="btn btn-info">Nuevo pedido</button>
+  </td>
+  <button (click)="logaut()">salir</button>
+  
+  
+    
