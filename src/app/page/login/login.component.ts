@@ -32,7 +32,7 @@ export class LoginComponent {
         if (this.admin === "admin") {
           window.location.href = ('admin');
         } else {
-          window.location.href = ('restaurante');
+          window.location.href = ('cliente');
         }
       }
     });

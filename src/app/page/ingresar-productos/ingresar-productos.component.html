@@ -1,0 +1,19 @@
+<div class="container" style="width: 50%;">
+    <form (ngSubmit)="cargar(form)" #form="ngForm">
+        Ingrese id:
+        <input type="text" class="form-control" name="id" [(ngModel)]=id>
+
+        Ingrese nombre:
+        <input type="text" class="form-control" name="nombre" [(ngModel)]=nombre>
+
+        Ingrese precio:
+        <input type="text" class="form-control" name="precio" [(ngModel)]=precio>
+
+        Ingrese categoria:
+        <input type="text" class="form-control" name="categoria" [(ngModel)]=categoria>
+
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+    </form>
+  
+</div>
+

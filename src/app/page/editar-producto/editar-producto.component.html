@@ -1,0 +1,15 @@
+<form class="form-group" (ngSubmit)="editar(formulario)" #formulario="ngForm">
+    <label class="form-label">Ingresar Id</label>
+    <input class="form-control" type="text" name="id" [(ngModel)]="id">
+    <label class="form-label">Ingresaer Nombre</label>
+    <input class="form-control" type="text" name="nombre" [(ngModel)]="nombre">
+    <label class="form-label">Ingresar precio</label>
+    <input class="form-control" type="number" name="precio" [(ngModel)]="precio">
+    <label class="form-label">Ingresar categoria</label>
+    <input class="form-control" type="text" name="categoria" [(ngModel)]="categoria">
+   
+    
+   
+
+    <button class="btn btn-primary" type="submit">Enviar</button>
+</form>

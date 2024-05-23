@@ -1,0 +1,16 @@
+<div class="container">
+    <div *ngIf="producto" class="card">
+      <h1 class="card-title text-center">{{ producto.nombre }}</h1>
+      <h2 class="card-title text-center">{{ producto.precio }}</h2>
+      <h2 class="card-title text-center">{{ producto.categoria }}</h2>
+      
+      <div class="image-container d-flex justify-content-center align-items-center">
+        <img src="{{ producto.imagen }}" alt="Lights" class="img-thumbnail" style="max-width: 50%; height: auto;" />
+      </div>
+    </div>
+  </div>
+  <td>
+    <button [routerLink]="['/producto']">Regresar</button>
+   
+   </td>
+  

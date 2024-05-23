@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="gallery-container">
+      <div class="gallery">
+        @for(item of personas; track item) {
+          <div class="item">
+            <h4>{{item.nombre}}</h4>
+            <p>Precio: {{item.precio}}</p>
+            <p>Categoría: {{item.categoria}}</p>
+            <div class="buttons">
+              <button (click)="agregarProducto(item)">Agregar</button>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  
+    <div class="productos-agregados">
+        <h2>Carrito</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Acción</th> <!-- Columna para el botón de eliminar -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let producto of productosAgregados; let i = index">
+                    <td>{{producto.nombre}}</td>
+                    <td>{{producto.categoria}}</td>
+                    <td>{{producto.precio | currency}}</td>
+                    <td>
+                        <button (click)="eliminarProducto(i)" class="boton-redondo">X</button> <!-- Botón de eliminar -->
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td colspan="5"><hr></td> <!-- Línea horizontal -->
+                </tr>
+    
+                <tr>
+                    <td colspan="2"><strong>Total:</strong></td>
+                    <td>{{ccalcularTotalProductos() | currency}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <button (click)="limpiarCarrito()" class="boton-limpiar">Limpiar Carrito</button> 
+    </div>
+
+    <button (click)="logaut()">salir</button>
+    
+      

@@ -1,0 +1,94 @@
+.gallery-container {
+    border-radius: 20px;
+    overflow: hidden; /* Para que los elementos hijos no sobresalgan del contenedor redondeado */
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px; /* Espacio interno para que los elementos no toquen los bordes redondeados */
+  }
+
+  .item {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Borde redondeado para cada elemento de la galería */
+    background-color: #f9f9f9; /* Color de fondo para resaltar los elementos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar los elementos */
+  }
+
+  .buttons button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Borde redondeado para los botones */
+  }
+
+  .button-editar {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+  }
+
+  .button-eliminar {
+    background-color: #f44336; /* Rojo */
+    color: white;
+  }
+
+  .button-info {
+    background-color: #2196F3; /* Azul */
+    color: white;
+  }
+
+  .buttons button:hover {
+    opacity: 0.9; /* Cambia la opacidad al pasar el ratón para indicar que es clickeable */
+  }
+  .container {
+    display: flex;
+  justify-content: space-between;
+ 
+  overflow: hidden; 
+  border-radius: 20px;
+  }
+  
+  
+  .productos-agregados {
+     background-color: black;
+  color: white;
+  padding: 10px; /* Mantenemos el padding reducido */
+  flex: 1;
+  border-radius: 15px; /* Mantenemos el radio de borde */
+  font-size: 14px; /* Mantenemos el tamaño de fuente */
+  max-width: 280px; /* Definimos una anchura máxima */
+  }
+  .boton-redondo {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    width: 30px; /* Ajusta el ancho del círculo */
+    height: 30px; /* Ajusta la altura del círculo */
+    font-size: 12px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    cursor: pointer;
+    outline: none; /* Elimina el contorno predeterminado del botón */
+}
+
+.boton-redondo:hover {
+    background-color: darkred; /* Cambia el color al pasar el ratón por encima */
+}
+.boton-limpiar {
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 20px; /* Ajusta el radio para redondear el botón */
+    padding: 10px 20px; /* Ajusta el relleno para hacer el botón más grande */
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.boton-limpiar:hover {
+    background-color: darkgoldenrod; /* Cambia el color al pasar el ratón por encima */
+}

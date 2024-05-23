@@ -1,0 +1,36 @@
+{
+  "xxx": [
+    {
+      "id": 1,
+      "nombre": "sandia",
+      "precio": 2,
+      "categoria": "fruta"
+    },
+    {
+      "id": 2,
+      "nombre": "Manzana",
+      "precio": 2,
+      "categoria": "fruta",
+      "imagen": ""
+    },
+    {
+      "id": 3,
+      "nombre": "sandia",
+      "precio": 2,
+      "categoria": "fruta",
+      "imagen": ""
+    },
+    {
+      "id": "5",
+      "nombre": "papa",
+      "precio": "12",
+      "categoria": "fruta"
+    },
+    {
+      "id": "6",
+      "nombre": "cebolla",
+      "precio": "12",
+      "categoria": "fruta"
+    }
+  ]
+}

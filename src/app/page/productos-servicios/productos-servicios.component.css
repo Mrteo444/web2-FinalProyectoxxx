@@ -1,0 +1,47 @@
+.gallery-container {
+    border-radius: 20px;
+    overflow: hidden; /* Para que los elementos hijos no sobresalgan del contenedor redondeado */
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px; /* Espacio interno para que los elementos no toquen los bordes redondeados */
+  }
+
+  .item {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Borde redondeado para cada elemento de la galería */
+    background-color: #f9f9f9; /* Color de fondo para resaltar los elementos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar los elementos */
+  }
+
+  .buttons button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Borde redondeado para los botones */
+  }
+
+  .button-editar {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+  }
+
+  .button-eliminar {
+    background-color: #f44336; /* Rojo */
+    color: white;
+  }
+
+  .button-info {
+    background-color: #2196F3; /* Azul */
+    color: white;
+  }
+
+  .buttons button:hover {
+    opacity: 0.9; /* Cambia la opacidad al pasar el ratón para indicar que es clickeable */
+  }

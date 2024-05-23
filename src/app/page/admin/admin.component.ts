@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { LoginService } from '../../service/login.service';
 import { NosotrosService } from '../../service/nosotros.service';
 import { RouterLink } from '@angular/router';
+import { ProductosServiciosComponent } from '../productos-servicios/productos-servicios.component';
 
 @Component({
   selector: 'app-admin',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,ProductosServiciosComponent],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.css'
 })
