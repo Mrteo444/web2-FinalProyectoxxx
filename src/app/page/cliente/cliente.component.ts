@@ -6,6 +6,8 @@ import { IngresarProductosComponent } from '../ingresar-productos/ingresar-produ
 import { CommonModule } from '@angular/common';
 import { XxxService } from '../../service/xxx.service';
 import { LoginService } from '../../service/login.service';
+import jsPDF from 'jspdf';
+
 
 @Component({
   selector: 'app-cliente',
@@ -65,7 +67,14 @@ logaut(){
   }
 }
 
+
+comprar() {
+  // Muestra la alerta de compra
+  alert('¡Compra realizada!');
 }
+
+}
+
 
   
 

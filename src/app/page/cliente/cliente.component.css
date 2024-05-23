@@ -31,6 +31,17 @@
     background-color: #4CAF50; /* Verde */
     color: white;
   }
+  .button-comprar {
+    background-color: #06a4ff; /* Verde */
+    color: black;
+    border: none;
+    border-radius: 20px; /* Ajusta el radio para redondear el botón */
+    padding: 10px 20px; /* Ajusta el relleno para hacer el botón más grande */
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+  }
+
 
   .button-eliminar {
     background-color: #f44336; /* Rojo */
